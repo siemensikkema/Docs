@@ -17,6 +17,11 @@ status = 200
 to = ":library/documentation.doccarchive/data/documentation/validations.json"
 
 [[redirects]]
+from = ":library/*"
+status = 200
+to = ":library/documentation.doccarchive/:splat"
+
+[[redirects]]
 force = true
 from = ":library/"
 status = 302
