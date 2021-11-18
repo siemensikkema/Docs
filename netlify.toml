@@ -1,0 +1,35 @@
+[build]
+publish = "docs/"
+
+[[redirects]]
+from = ":library/documentation/*"
+status = 200
+to = ":library.doccarchive/index.html"
+
+[[redirects]]
+from = ":library/tutorials/*"
+status = 200
+to = ":library.doccarchive/index.html"
+
+[[redirects]]
+from = "/data/documentation.json"
+status = 200
+to = ":library.doccarchive/data/documentation/validations.json"
+
+[[redirects]]
+force = true
+from = ":library/"
+status = 302
+to = ":library/documentation/"
+
+[[redirects]]
+force = true
+from = ":library/documentation"
+status = 302
+to = ":library/documentation/"
+
+[[redirects]]
+force = true
+from = ":library/tutorials"
+status = 302
+to = ":library/tutorials/"
